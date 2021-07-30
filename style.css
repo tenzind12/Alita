@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+body {
+  display: grid;
+}
+img {
+  width: 100%;
+}
+
+.container_nav {
+  display: flex;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+/*hamburger menu*/
+.btn-line {
+  content: "";
+  background: rgb(122, 117, 117);
+  width: 28px;
+  height: 3px;
+  margin-bottom: 5px;
+}
+
+.menu_hidden {
+  background: #211f1e;
+  position: fixed;
+  left: -260px;
+  top: 0;
+  width: fit-content;
+  height: 100vh;
+}
+
+.menu_hidden_list li,
+.menu_hidden p {
+  color: white;
+  list-style: none;
+  padding: 1em;
+  text-align: right;
+}
+
+.menu {
+  display: flex;
+  min-height: fit-content;
+  width: 100vw;
+  padding: 15px 0 17px 10px;
+}
+
+.hamburger {
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+/* title main */
+.main_title {
+  margin: auto;
+  position: relative;
+}
+
+.title {
+  font-size: 1em;
+  color: #e9dbd5;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.title_curly_line {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  font-size: 32px;
+  color: #f7ede8;
+}
+
+/* first block */
+.one {
+  height: 85vh;
+  background: url(images/alita.jpg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.block_one_title {
+  word-spacing: 1pc;
+  font-size: 10vw;
+  margin: 30vh 45vw 0 0;
+  color: white;
+}
+
+.block_one_para {
+  margin-right: 45vw;
+  font-size: 2vw;
+  color: white;
+  font-family: cursive;
+}
+
+/* hambuger button */
+#hamburgerBtn {
+  display: none;
+}
+#hamburgerBtn:checked ~ label {
+  left: 270px;
+  position: relative;
+}
+
+#hamburgerBtn ~ .menu_hidden {
+  left: -300px;
+  transition: all ease-in-out 0.5s;
+}
+
+#hamburgerBtn:checked ~ .menu_hidden {
+  left: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+/* the image group */
+.container_image_group {
+  width: 100vw;
+  margin-top: 5em;
+  box-sizing: border-box;
+}
+
+.container__image__group {
+  margin: 1em;
+  box-shadow: 1px 1px 9px rgb(78, 71, 71);
+  border: 0.5px solid rgb(201, 196, 196);
+}
+
+/* classes together */
+.titles {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 3em;
+}
+.subtitles {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+/* girl fashion group */
+.girl_fashion {
+  /* margin: 124px 0; */
+}
+
+/* first text  */
+.first_text {
+  padding: 25vh 2em;
+  height: auto;
+}
+
+.first_para {
+  font-size: 1em;
+  color: #575353;
+}
+
+.first_para_title,
+.first_subtitle,
+.first_para {
+  margin-bottom: 14px;
+}
+
+.first_text a {
+  color: #ffd300;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.first_text a:hover {
+  color: rgb(68, 68, 116);
+}
+
+/* second paragraph - just texts */
+.second_text {
+  background: #ebe8e8;
+  padding: 10vh 2vw 4vh 0;
+  font-size: 100%;
+}
+.second_para {
+  font-size: 2em;
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.second_text a {
+  background: gold;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  float: right;
+  margin-right: 35%;
+}
+
+/* girl headphone image .girl_headphone {
+  width: 100%;
+  height: auto;
+} */
+
+/* third text group */
+
+.third_text {
+  background: gold;
+  padding: 10em 2em;
+}
+
+.third_para {
+  color: #575353;
+}
+
+.third_text a {
+  text-decoration: none;
+  font-size: 14px;
+  color: maroon;
+}
+
+.third_text a:hover {
+  color: rgb(68, 68, 116);
+}
+
+.third_title,
+.third_subtitle,
+.third_para {
+  margin-bottom: 14px;
+}
+
+/* fourth text group */
+.fourth_text {
+  background: #ffe359;
+  padding: 10em 2em;
+  text-align: right;
+}
+
+.fourth_text a {
+  text-decoration: none;
+  font-size: 14px;
+  color: maroon;
+  margin-right: 40%;
+}
+
+.fourth_text a:hover {
+  color: rgb(68, 68, 116);
+}
+
+.fourth_title,
+.fourth_subtitle,
+.fourth_para {
+  margin-bottom: 14px;
+}
+
+/* svg section */
+
+.svg_section {
+  padding: 3em 3em 0 3em;
+  text-align: center;
+}
+
+.svg_section img {
+  width: 20%;
+}
+.svg_titles {
+  font-weight: 700;
+  font-size: 2em;
+  color: rgb(122, 117, 117);
+  margin: 1em 0 2em 0;
+}
+
+.tablet_hidden,
+.trophy_hidden {
+  display: none;
+}
+
+/* .tablet img:hover {
+  opacity: 1;
+  cursor: pointer;
+} */
+
+/* desk part */
+.desk {
+  min-height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(images/digital_sect.jfif) center/cover no-repeat;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.desk h2 {
+  font-family: "Lora";
+  color: white;
+  font-size: 1.5em;
+}
+
+.desk h1 {
+  color: white;
+  font-size: 3em;
+}
+
+.desk a {
+  border: 3px solid gold;
+  color: gold;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+.desk h2,
+.desk h1 {
+  margin-bottom: 1em;
+}
+
+.desk_padding {
+  text-align: center;
+  /* padding-top: 20%; */
+}
+
+/* list section */
+.list_layout {
+  padding: 5em 2em;
+}
+
+.icons {
+  height: 24px;
+  width: 24px;
+}
+
+.list_title {
+  font-size: 32px;
+}
+
+.list_container {
+  padding-left: 3em;
+}
+.list_container * {
+  /* font-size: 1.2rem; */
+  margin-top: 1em;
+}
+.list_subtitle {
+  font-size: 2em;
+  font-weight: 400;
+  font-family: serif;
+}
+
+.list_combo {
+  margin-top: 3em;
+}
+
+.unlimited_title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #615f5f;
+}
+
+/* happy customer */
+.icons_bigger {
+  height: 6em;
+  width: 6em;
+}
+
+.happy_customer {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  z-index: 1;
+}
+
+.happy_customer::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(rgba(194, 187, 187, 0.7), rgba(190, 183, 183, 0.4)),
+    url(images/happy.jpg) center center;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+}
+
+.happy_container {
+  margin: auto;
+  padding-bottom: 7em;
+}
+
+.happy_container p {
+  font-size: 1.5em;
+  font-weight: 700;
+  /* margin-left: ; */
+  text-align: right;
+}
+
+.happy_container p span {
+  font-size: 4em;
+}
+
+.happy_combo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects,
+.projects span {
+  color: gold;
+}
+
+/* mustache para */
+.mustache {
+  text-align: center;
+  max-width: 100vw;
+  height: 50vh;
+}
+
+.mustache img {
+  height: 50%;
+  width: auto;
+  margin-top: -90px;
+}
+
+.mustache h1 {
+  margin-top: 1em;
+  letter-spacing: 1px;
+}
+
+.mustache p {
+  width: 80%;
+  margin: auto;
+  font-size: 3vh;
+}
+
+/* photo flex container */
+.photo_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  max-width: 100vw;
+  height: auto;
+  box-shadow: 1px 1px 12px grey;
+  overflow: hidden;
+  grid-gap: 1em;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.photo_container img {
+  /* width: auto; */
+  max-width: 100%;
+  /* height: fit-content; */
+  /* object-position: center; */
+  /* object-fit: cover; */
+  height: 100%;
+  /* background: rgb(119, 202, 51); */
+}
+
+.bottle {
+  grid-area: 1/1/3/2;
+  object-fit: cover;
+}
+
+.hanger {
+  grid-area: 3/1;
+  object-fit: scale-down;
+  object-position: top;
+}
+
+.vinyl {
+  grid-area: 1/2;
+  object-fit: scale-down;
+  object-position: top;
+}
+
+.paper_bag {
+  grid-area: 4/1/6/2;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wolf {
+  grid-area: 6/1;
+  object-fit: scale-down;
+  object-position: top;
+}
+
+.docs {
+  grid-area: 2/2/4/3;
+  object-fit: cover;
+}
+
+.monitor {
+  grid-area: 4/2;
+  object-fit: scale-down;
+  object-position: top;
+}
+
+.mug {
+  grid-area: 5/2/7/3;
+  object-fit: cover;
+}
+
+/* browse our works */
+.browse_box {
+  height: 20vh;
+  width: auto;
+  display: flex;
+}
+
+.browse {
+  margin: auto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffd300;
+  text-decoration: none;
+}
+
+.browse:hover {
+  color: rgb(91, 91, 97);
+  transition: all ease-out 0.8s;
+}
+
+/* our client */
+.our_client_subtitle {
+  font-family: serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  word-spacing: 5px;
+}
+
+.our_client_para {
+  text-align: center;
+}
+
+/* vintage house  */
+.vintage_house {
+  padding: 3em 0;
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+}
+
+.vintage_house img {
+  width: 10em;
+  height: 10em;
+}
+.dots {
+  display: flex;
+}
+.dots img {
+  margin-left: 1em;
+  width: 20px;
+  height: auto;
+}
+
+/* last image => desk office */
+.desk_office {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(images/desk_office.jfif) right/cover no-repeat;
+  text-align: center;
+  padding: 4em;
+}
+
+.desk_office h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.desk_office p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.desk_office p:nth-child(4) {
+  color: gold;
+  margin-bottom: 5em;
+}
+
+.desk_office p,
+.desk_office h2 {
+  color: rgb(185, 179, 179);
+}
+.desk_office p img {
+  height: 20px;
+  width: 20px;
+  margin-right: 0.5em;
+}
+
+.end_icons img {
+  width: 25px;
+  float: left;
+  margin-right: 1em;
+}
+
+.text_group_two {
+  margin-top: 10em;
+  text-align: right;
+}
+
+.text_group p:nth-child(2) {
+  margin-bottom: 3em;
+}
+
+.text_group a {
+  border: 3px solid rgb(194, 193, 190);
+  color: rgb(231, 231, 228);
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+/* footer */
+.conclude {
+  background-color: black;
+  display: grid;
+  place-items: center;
+  min-height: 30vh;
+}
+
+.flora_logo {
+  width: 30px;
+  height: auto;
+}
+
+.conclude p {
+  color: grey;
+  /* font-weight: 500; */
+}
+
+.footer_nav a {
+  margin-right: 1em;
+  color: grey;
+  text-decoration: none;
+  font-weight: 700;
+}

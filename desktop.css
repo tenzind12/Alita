@@ -1,0 +1,245 @@
+@media (min-width: 870px) {
+  * {
+    box-sizing: border-box;
+  }
+  .container_nav {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: transparent;
+    padding: 0.5em 0.5em 0 2em;
+  }
+  .menu {
+    margin-left: 90%;
+  }
+  #hamburgerBtn:checked ~ label {
+    left: 0;
+  }
+  .btn-line {
+    height: 5px;
+    width: 35px;
+  }
+
+  /* first block */
+  .one {
+    height: 100vh;
+    width: auto;
+    background: url(images/girl.jpg) center/cover no-repeat;
+  }
+
+  /* display grid for the body */
+  /* first grid */
+  .first-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 50vh);
+    grid-template-areas:
+      "fashion fashion fash-text fash-text"
+      "fashion fashion fash-text fash-text"
+      "second-text second-text girl-headphone headphone-text"
+      "wp girl-yell-bg svg svg"
+      "desk desk desk desk";
+  }
+
+  /* grid naming */
+  .girl_fashion {
+    grid-area: fashion;
+    /* height: 120vh; */
+    width: 130%;
+    /* position: absolute; */
+    object-position: bottom;
+    /* object-fit: contain; */
+    /* align-self: stretch; */
+  }
+  .first_text {
+    grid-area: fash-text;
+    display: grid;
+    margin: auto;
+    font-size: 1.5vw;
+    z-index: 1;
+  }
+
+  /* second block */
+  .second_text {
+    grid-area: second-text;
+    background: url(images/desk_office2.jpg) center/cover no-repeat;
+    font-size: 0.8vw;
+  }
+  .girl_headphone2 {
+    grid-area: girl-headphone;
+    background: url(images/girl_headphone.jpg) left/cover no-repeat;
+  }
+  .girl_headphone {
+    /* to hide duplicate photo */
+    display: none;
+  }
+  .third_text {
+    grid-area: headphone-text;
+    font-size: 0.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+  }
+
+  /* third block */
+  .fourth_text {
+    grid-area: wp;
+    height: 100%;
+    display: grid;
+    margin: auto;
+    font-size: 0.8vw;
+  }
+  .girl_yellow_bg2 {
+    grid-area: girl-yell-bg;
+    background: url(images/girl_yellow_bg.jpg) center/cover no-repeat;
+  }
+  .girl_yellow_bg {
+    /* to hide duplicate photo */
+    display: none;
+  }
+  .svg_section {
+    grid-area: svg;
+    display: flex;
+    margin: auto;
+  }
+
+  /* fourth block */
+  .desk {
+    grid-area: desk;
+  }
+
+  /* second-grid-block */
+  .second-block {
+    background: url(images/listening-music.png) no-repeat;
+    background-position: 30vw 10vh;
+    background-size: cover;
+    height: fit-content;
+    padding-top: 5em;
+    /* height: 100vh; */
+  }
+  .list_flex {
+    display: flex;
+    width: 50%;
+  }
+  /* resizing fonts to be adaptable to screen */
+  .list_para {
+    font-size: 1vw;
+  }
+  .list_subtitle {
+    font-size: 2vw;
+  }
+  .list_title {
+    font-size: 5vw;
+  }
+
+  /* third-block-flex */
+  .happy_container {
+    display: flex;
+    max-width: 100vw;
+    place-content: center;
+  }
+  .happy_combo {
+    margin-right: 6em;
+  }
+  .icons_bigger {
+    font-size: 60%;
+  }
+  .happy_container p {
+    font-size: 1em;
+    /* text-align: right; */
+  }
+
+  /* Recent Work Block */
+  .mustache img {
+    margin-top: -100px;
+  }
+  .mustache p {
+    font-size: 1vw;
+  }
+
+  /* image group grid block */
+  .photo_container {
+    display: grid;
+    height: 120vh;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    max-width: 100%;
+    grid-template-areas:
+      "bottle vinyl docs docs"
+      "bottle hanger docs docs"
+      "paperbag paperbag monitor mug"
+      "paperbag paperbag wolf mug";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background: rgb(247, 250, 244);
+  }
+  /* naming the grids */
+  .img1 {
+    grid-area: bottle;
+    background: url(images/bottle.jpg) center/cover no-repeat;
+    /* height: 80vh; */
+  }
+  .img2 {
+    grid-area: hanger;
+    background: url(images/hanger.jpg) center/cover no-repeat;
+  }
+  .img3 {
+    grid-area: paperbag;
+    background: url(images/paper_bag.jpg) center/cover no-repeat;
+  }
+  .img4 {
+    grid-area: wolf;
+    background: url(images/wolf.jpg) center/cover no-repeat;
+  }
+  .img5 {
+    grid-area: vinyl;
+    background: url(images/vinyl.jpg) center/cover no-repeat;
+  }
+  .img6 {
+    background: url(images/document.png) center/cover no-repeat;
+    grid-area: docs;
+  }
+  .img7 {
+    grid-area: monitor;
+    background: url(images/monitor.jpg) center/cover no-repeat;
+  }
+  .img8 {
+    background: url(images/mug.jpg) center/cover no-repeat;
+    grid-area: mug;
+  }
+  .photo_container img {
+    display: none;
+  }
+
+  /* Our clients */
+  .third_block {
+    display: flex;
+    height: 60vh;
+  }
+  .fourth_title {
+    transform: translateX(40px);
+    font-size: 5em;
+  }
+  .our_client_subtitle {
+    font-size: 2vw;
+  }
+  .our_client_para {
+    font-size: 1vw;
+  }
+  .orange_eye_2 {
+    height: 100%;
+    width: auto;
+  }
+
+  /* last footer */
+  .desk_office {
+    display: flex;
+    min-height: 10%;
+  }
+  .text_group_two {
+    width: 50%;
+    text-align: right;
+    margin: 50px 0 0 250px;
+  }
+}
